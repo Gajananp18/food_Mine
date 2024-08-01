@@ -9,7 +9,7 @@ set('strictQuery', true);
 
 export const dbconnect = async () => {
   try {
-    connect(process.env.MONGO_URI, {
+    connect(process.env.MONGO_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
